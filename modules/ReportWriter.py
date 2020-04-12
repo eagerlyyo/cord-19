@@ -1,0 +1,2 @@
+def writeReport(analysis):
+    pass
