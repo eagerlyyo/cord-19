@@ -4,7 +4,7 @@ import modules.Metric as Metric
 
 def rateParagraph(para, embeddingQuery):
     score = 0
-    sentences = Tokenizer.getSentences(para)
+    sentences = Tokenizer.getSentencesDotSeparated(para)
     context = [0]
     for sentence in sentences:
         embeddingSentence, context = Embeddings.getEmbedding(sentence, context)
